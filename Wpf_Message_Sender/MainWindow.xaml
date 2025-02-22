@@ -1,0 +1,20 @@
+﻿<Window x:Class="Wpf_Message_Sender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Message_Sender"
+        mc:Ignorable="d"
+        Title="SMS Sender" Height="300" Width="400">
+    <Grid>
+        <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Phone Number:" />
+            <TextBox Name="PhoneNumberTextBox" Width="200" />
+
+            <TextBlock Text="Message:" Margin="0,10,0,0" />
+            <TextBox Name="MessageTextBox" Width="200" Height="100" TextWrapping="Wrap" AcceptsReturn="True" />
+
+            <Button Content="Send" Width="100" Margin="0,10,0,0" Click="SendButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
